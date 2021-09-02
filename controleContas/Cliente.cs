@@ -30,5 +30,13 @@ namespace controleContas
             AnoNascimento = anoNascimento;
             Cpf = cpf;
         }
+
+        public void CriarCliente(string nome, string email, int anoNascimento, string cpf)
+        {
+            Nome = nome;
+            Email = email;
+            AnoNascimento = anoNascimento;
+            Cpf = cpf;
+        }
     }
 }
