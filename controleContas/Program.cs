@@ -29,13 +29,26 @@ namespace controleContas
                     {
                         case "1":
                             Console.WriteLine("Faça seu Cadastro");
-                            
+                            Console.WriteLine("Digite seu nome");
+                            string nome = Console.ReadLine();
+                            Console.WriteLine("Digite seu email: (teste@teste.com)");
+                            string email = Console.ReadLine();
+                            Console.WriteLine("Digite seu ano de nascimento:(ex: 1999)");
+                            string anoString = Console.ReadLine();
+                            int ano = Int32.Parse(anoString);
+                            Console.WriteLine("Digite seu CPF: ");
+                            string cpf = Console.ReadLine();
+                            Cliente cliente = new Cliente();
+                            cliente.CriarCliente(nome, email, ano, cpf);
+                            Console.WriteLine(cliente.Nome);
+                            Console.ReadLine();
                             break;
                         case "2":
                             break;
                         case "3":
                             break;
                         case "4":
+
                             break;
                         case "5":
                             break;

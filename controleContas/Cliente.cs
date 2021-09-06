@@ -16,6 +16,11 @@ namespace controleContas
 
         public string Cpf { get; private set; }
 
+        public Cliente()
+        {
+
+        }
+
         public Cliente(string nome, int anoNascimento, string cpf)
         {
             if(Int32.Parse(DateTime.Now.ToString("yyyy")) - anoNascimento < 18)
